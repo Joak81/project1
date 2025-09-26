@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+
+# Testing
+coverage/
+__tests__/
+*.test.*
+jest.config.js
+jest.setup.js
+
+# Development
+.env.local
+.env.development
+
+# Git
+.git/
+.gitignore
+
+# Documentation
+*.md
+docs/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
