@@ -1,42 +1,107 @@
-# Project1
+# SL Benfica Info - Site Oficial
 
-## 🎯 Objetivo
-Projeto de desenvolvimento com abordagem TDD e documentação completa.
+🦅 Site completo com informações do Sport Lisboa e Benfica
 
-## 🛠️ Tecnologias
-- **Controle de Versão:** GitHub
-- **Deploy:** Vercel (quando aplicável)
-- **Metodologia:** TDD (Test-Driven Development)
+## 🌐 Acesso ao Site
 
-## 📊 Status
-Ver [PROJECT_STATUS.md](./PROJECT_STATUS.md) para status atualizado do projeto.
+**URL de Produção:** https://project1-dhowzjjrn-joao-carvalhos-projects-b6a3b9ad.vercel.app
 
-## 📁 Estrutura
+## ✨ Funcionalidades
+
+- **Próximos Jogos** - Visualize os próximos 5 jogos do Benfica
+- **Escalações** - Veja o 11 inicial e suplentes do último jogo
+- **Resultados Recentes** - Confira os últimos 5 resultados
+- **Informações do Clube** - Dados sobre o estádio e história
+
+## 🚀 Tecnologias
+
+- **Next.js 14** - Framework React com App Router
+- **TypeScript** - Type safety
+- **TailwindCSS** - Estilização moderna
+- **API-Sports** - Dados em tempo real
+- **Vercel** - Deploy e hosting
+
+## 🔧 Instalação Local
+
+```bash
+# Clonar repositório
+git clone https://github.com/Joak81/project1.git
+cd project1
+
+# Instalar dependências
+npm install
+
+# Configurar variáveis de ambiente
+cp .env.example .env.local
+# Editar .env.local com sua API key
+
+# Executar em desenvolvimento
+npm run dev
 ```
-project1/
-├── README.md           # Documentação principal
-├── PROJECT_STATUS.md   # Status atual do desenvolvimento
-├── DEVELOPMENT.md      # Guia de desenvolvimento
-├── docs/              # Documentação detalhada
-├── src/               # Código fonte
-├── tests/             # Testes
-└── .github/           # Configurações GitHub
+
+## 📝 Scripts Disponíveis
+
+- `npm run dev` - Servidor de desenvolvimento
+- `npm run build` - Build de produção
+- `npm start` - Iniciar servidor de produção
+- `npm test` - Executar testes
+- `npm run test:coverage` - Testes com cobertura
+
+## 📁 Estrutura do Projeto
+
+```
+src/
+├── app/           # App Router pages
+├── components/    # React components
+├── lib/           # API integration
+└── __tests__/     # Unit tests
 ```
 
-## 🚀 Como Começar
-1. Clone o repositório
-2. Leia a documentação em `/docs`
-3. Siga o guia de desenvolvimento
+## 🅰️ API-Sports
 
-## 📝 Documentação
-Toda funcionalidade desenvolvida é documentada em:
-- `/docs` - Documentação técnica
-- `PROJECT_STATUS.md` - Status e progresso
-- Commits seguem padrão: `type: description`
+Este projeto usa a API-Sports para dados em tempo real. Para usar:
 
-## 🔗 Links
-- **GitHub:** https://github.com/Joak81/project1
-- **Vercel:** Configurado quando necessário
+1. Crie uma conta em [api-sports.io](https://api-sports.io/)
+2. Obtenha sua API key
+3. Configure em `.env.local`:
+```
+API_SPORTS_KEY=sua_chave_aqui
+```
 
-## 📜 Licença
+## 🧑‍💻 Desenvolvimento
+
+### Metodologia TDD
+Todo o desenvolvimento segue Test-Driven Development:
+1. Escrever testes primeiro
+2. Implementar funcionalidade
+3. Refatorar código
+
+### Commits Semânticos
+- `feat:` Nova funcionalidade
+- `fix:` Correção de bug
+- `test:` Adição de testes
+- `docs:` Documentação
+- `refactor:` Refatoração
+
+## 🚀 Deploy
+
+Deploy automático via Vercel:
+```bash
+vercel --prod
+```
+
+## 📊 Status do Projeto
+
+Ver [PROJECT_STATUS.md](./PROJECT_STATUS.md) para informações detalhadas.
+
+## 📝 Licença
+
 MIT
+
+## 👨‍💻 Autor
+
+Desenvolvido por João Carvalho
+
+---
+
+**E Pluribus Unum - Rumo ao 39º! 🦅❤️**
